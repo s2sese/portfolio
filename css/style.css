@@ -278,3 +278,30 @@ section#skill .skill_main>div .box dl dd {
     padding-top: 0;
     padding-left: 77px;
 }
+
+.box.about dl dd {
+    text-indent: -7px;
+}
+
+.box.dontacts dl dd {
+    text-indent: -11px;
+}
+
+.box.licenses dl dd {
+    text-indent: -13px;
+}
+
+/* 전화, 메일 아이콘 */
+.box.contacts dl dd i {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    padding-top: 5px;
+    color: #a7a7a7;
+    margin-right: 5px;
+}
+
+.box.contacts dl dd span {
+    position: relative;
+    left: 10px;
+}
