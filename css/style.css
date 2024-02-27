@@ -315,47 +315,47 @@ section#portfolio {
     padding-top: 70px;
 }
 
-section#portfolio .profile_main {
+section#portfolio .portfolio_main {
     width: 1300px;
     margin: 0 auto;
     padding: 30px 0;
 }
 
 /* 폿폴이미지 */
-section#portfolio .profile_main dl {
+section#portfolio .portfolio_main dl {
     display: flex;
     justify-content: space-between;
 }
 
-section#portfolio .profile_main dl dt {
+section#portfolio .portfolio_main dl dt {
     width: 700px;
     height: 620px;
 }
 
 /* 폿폴설명 */
-section#portfolio .profile_main dl dd {
+section#portfolio .portfolio_main dl dd {
     /* position: absolute; */
     width: 450px;
 }
 
-.profile_main dl dd h4 {
+.portfolio_main dl dd h4 {
     font-size: 15px;
     margin-bottom: 10px;
 }
 
-.profile_main dl dd h5 {
+.portfolio_main dl dd h5 {
     font-size: 50px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.profile_main dl dd p {
+.portfolio_main dl dd p {
     font-size: 15px;
     line-height: 1.7;
 }
 
 /* website btn */
-.profile_main dl dd p.site_btn a{
+.portfolio_main dl dd p.site_btn a{
     display: block;
     width: 100px;
     padding: 10px 70px;
@@ -366,7 +366,12 @@ section#portfolio .profile_main dl dd {
     border:1px solid #444;
 }
 
-.profile_main dl dd p.site_btn a:hover {
+.portfolio_main dl dd p.site_btn a:hover {
     color: #8b72e8;
     border:1px solid #8b72e8
+}
+
+/* pf - 01 - img */
+.portfolio_main dl:nth-child(1) dt {
+    background: url("../images/pf1.png")no-repeat;
 }
