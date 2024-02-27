@@ -441,6 +441,74 @@ section#portfolio .portfolio_main dl dd {
     background-size: 85%;
 }
 
+/* etc - 기타디자인 썸네일 */
+
+/* etc - 기타디자인 슬라이드 팝업 */
+
+section#etc {
+    min-width: 1400px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+
+section#etc .etc_main {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+
+section#etc .etc_main dl {
+    width: 19.2%;     
+    cursor: pointer;
+}
+
+/* 이미지 */
+section#etc .etc_main dl dt {
+    position: relative;
+    width: 270px; height: 270px;
+}
+
+section#etc .etc_main dl dt p {
+    width: 100%; height: 100%;
+}
+
+section#etc .etc_main dl dt p::before {
+    content: '';
+    background-color: rgba(28,28,28,0.6);
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;
+    width: 0;
+    transition: .5s;
+}
+
+section#etc .etc_main dl:hover dt p::before {
+    width: 100%;
+}
+
+/* 자세히보기 */
+section#etc .etc_main dl dt p strong {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+    border-radius: 50px;
+    opacity: 0;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .6s;
+}
+
+section#etc .etc_main dl:hover dt p strong {
+    opacity: 1;
+}
+
 /* footer */
 #wrap footer {
     width: 100%;
