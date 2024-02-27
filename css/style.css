@@ -27,7 +27,7 @@ a {
     top: 0;
     left: 0;
     overflow: hidden;
-    text-indent: -999999999px;
+    text-indent: -9999999999px;
     width: 0;
     height: 0;
     font-size: 0;
@@ -114,7 +114,7 @@ h1.logo a span.pf {
 }
 
 h1.logo a span.pf::before {
-    content:'';
+    content: '';
     display: block;
     position: absolute;
     top: 3px;
@@ -125,7 +125,6 @@ h1.logo a span.pf::before {
 }
 
 /* menu */
-
 ul.nav {
     position: absolute;
     right: 0;
@@ -142,7 +141,6 @@ ul.nav li {
     cursor: pointer;
 }
 
-
 /* profile */
 section#profile {
     width: 100%;
@@ -158,6 +156,7 @@ section#profile .profile_main {
     justify-content: space-between;
 }
 
+/* 내사진 */
 section#profile .profile_main .p_left {
     padding-left: 30px;
 }
@@ -173,6 +172,7 @@ section#profile .profile_main .p_left .img {
 section#profile .profile_main .p_right {
     width: 750px;
     margin-top: 20px;
+
 }
 
 section#profile .profile_main .p_right dl {
@@ -185,26 +185,26 @@ section#profile .profile_main .p_right dl dt {
     margin-bottom: 30px;
 }
 
-section#profile .profile_main .p_right dl dd span {
-    color: #8b72e8;
-}
-
 /* 텍스트 그라데이션 */
 section#profile .profile_main .p_right dl dt span {
     background: linear-gradient(to left, #8b72e8, #83b9f3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+section#profile .profile_main .p_right dl dd span {
+    color: #8b72e8;
 }
 
 section#profile .profile_main .p_right dl dd {
     margin-top: 50px;
     font-size: 17px;
-    letter-spacing: -1.7px;
+    letter-spacing: -1px;
     line-height: 1.7;
 }
-
 /* skills */
-/* 모든 section의 영문, 한글 타이틀 */
+
+/* 모든 section의 영문,한글 타이틀 */
 section h2 {
     font-size: 17px;
     width: 90px;
@@ -213,6 +213,7 @@ section h2 {
     border-bottom: 1px solid gray;
     font-family: 'SpoqaR';
     text-align: center;
+    
 }
 
 section h3 {
