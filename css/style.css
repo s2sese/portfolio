@@ -383,6 +383,7 @@ section#portfolio .portfolio_main dl dd {
 .portfolio_main dl:nth-child(2) {
     display: flex;
     flex-direction: row-reverse;
+    gap: 70px;
 }
 
 .portfolio_main dl:nth-child(2) dt {
@@ -394,4 +395,10 @@ section#portfolio .portfolio_main dl dd {
 .portfolio_main dl:nth-child(2) dd {
     text-align: right;
     margin-right: 50px;
+    position: relative;
+}
+
+.portfolio_main dl:nth-child(2) dd p.site {
+    position: absolute;
+    right: 0;
 }
