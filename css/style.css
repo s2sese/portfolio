@@ -259,3 +259,22 @@ section#skill .skill_main>div .box>i {
     padding: 10px;
     text-align: center;
 }
+
+section#skill .skill_main>div .box dl dt {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+section#skill .skill_main>div .box dl dd {
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.7;
+    letter-spacing: -1px;
+    padding-top: 0;
+    padding-left: 77px;
+}
