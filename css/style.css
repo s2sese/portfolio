@@ -374,4 +374,6 @@ section#portfolio .portfolio_main dl dd {
 /* pf - 01 - img */
 .portfolio_main dl:nth-child(1) dt {
     background: url("../images/pf1.png")no-repeat;
+    background-position: 120px 100px;
+    background-size: 85%;
 }
