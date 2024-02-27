@@ -452,6 +452,13 @@ section#etc {
     padding: 100px 0;
 }
 
+section#etc {
+    min-width: 1400px;
+    width: 100%;
+    background-color: #ece9e9;
+    padding: 100px 0;
+}
+
 section#etc .etc_main {
     width: 1400px;
     height: 400px;
@@ -507,6 +514,44 @@ section#etc .etc_main dl dt p strong {
 
 section#etc .etc_main dl:hover dt p strong {
     opacity: 1;
+}
+
+/* 썸네일 이미지 배치 */
+section#etc .etc_main dl.etc_1 dt p i,
+section#etc .etc_main dl.etc_2 dt p i,
+section#etc .etc_main dl.etc_3 dt p i,
+section#etc .etc_main dl.etc_4 dt p i,
+section#etc .etc_main dl.etc_5 dt p i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section#etc .etc_main dl.etc_1 dt p i {
+    background: url("../images/popup/thum1.png")no-repeat center/cover;
+    background-size: 100%;
+}
+
+section#etc .etc_main dl.etc_2 dt p i {
+    background: url("../images/popup/thum2.png")no-repeat center/cover;
+    background-size: 100%;
+}
+
+section#etc .etc_main dl.etc_3 dt p i {
+    background: url("../images/popup/thum3.png")no-repeat center/cover;
+    background-size: 100%;
+}
+
+section#etc .etc_main dl.etc_4 dt p i {
+    background: url("../images/popup/thum4.png")no-repeat center/cover;
+    background-size: 100%;
+}
+
+section#etc .etc_main dl.etc_5 dt p i {
+    background: url("../images/popup/thum5.png")no-repeat center/cover;
+    background-size: 100%;
 }
 
 /* footer */
