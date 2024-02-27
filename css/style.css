@@ -554,6 +554,18 @@ section#etc .etc_main dl.etc_5 dt p i {
     background-size: 100%;
 }
 
+/* 썸네일 설명 */
+section#etc .etc_main dl dd {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: right;
+}
+section#etc .etc_main dl dd span {
+    font-weight: normal;
+    display: block;
+}
+
 /* footer */
 #wrap footer {
     width: 100%;
