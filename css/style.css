@@ -378,3 +378,20 @@ section#portfolio .portfolio_main dl dd {
     background-position: 120px 100px;
     background-size: 85%;
 }
+
+/* pf - 02 - img */
+.portfolio_main dl:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.portfolio_main dl:nth-child(2) dt {
+    background: url("../images/pf2.png")no-repeat;
+    background-position: 0 130px;
+    background-size: 85%;
+}
+
+.portfolio_main dl:nth-child(2) dd {
+    text-align: right;
+    margin-right: 50px;
+}
