@@ -188,8 +188,8 @@ section#profile .profile_main .p_right dl dt {
 /* 텍스트 그라데이션 */
 section#profile .profile_main .p_right dl dt span {
     background: linear-gradient(to left, #8b72e8, #83b9f3);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section#profile .profile_main .p_right dl dd span {
@@ -202,8 +202,8 @@ section#profile .profile_main .p_right dl dd {
     letter-spacing: -1px;
     line-height: 1.7;
 }
-/* skills */
 
+/* skills */
 /* 모든 section의 영문,한글 타이틀 */
 section h2 {
     font-size: 17px;
