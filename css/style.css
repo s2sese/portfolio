@@ -91,3 +91,27 @@ a {
     transform: translateY(-50%);
     background-size: 35px;
 }
+
+#wrap header .header_main h1.logo a {
+    color: #444;
+}
+
+#wrap header .header_main h1.logo a span {
+    color: #1ebbd7;
+}
+
+#wrap header .header_main h1.logo a span.pf {
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+
+h1.logo a span.pf::before {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -8px;
+    width: 1px;
+    height: 9px;
+}
