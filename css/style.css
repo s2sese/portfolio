@@ -122,3 +122,20 @@ h1.logo a span.pf::before {
     height: 9px;
     background-color: #444;
 }
+
+/* menu */
+ul.nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+
+ul.nav li {
+    padding: 26px;
+    color: #444;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
