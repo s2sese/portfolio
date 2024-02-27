@@ -419,7 +419,7 @@ section#portfolio .portfolio_main dl dd {
 
 .portfolio_main dl:nth-child(4) dt {
     background: url("../images/pf4.png")no-repeat;
-    background-position: 0 130px;
+    background-position: 0 150px;
     background-size: 85%;
 }
 
