@@ -139,3 +139,9 @@ ul.nav li {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* profile */
+section#profile {
+    width: 100%;
+    padding-top: 100px;
+}
