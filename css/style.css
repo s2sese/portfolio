@@ -456,3 +456,13 @@ section#portfolio .portfolio_main dl dd {
 #wrap footer .footer_main .copyrigt p {
     margin-top: 30px;
 }
+
+/* 하단 화살표 */
+img.btn_top {
+    position: fixed;
+    right: 2%;
+    bottom: 7%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
