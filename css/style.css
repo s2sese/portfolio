@@ -98,15 +98,15 @@ a {
     background-size: 35px;
 }
 
-#wrap header .header_main h1.logo a {
+h1.logo a {
     color: #444;
 }
 
-#wrap header .header_main h1.logo a span {
+h1.logo a span {
     color: #1ebbd7;
 }
 
-#wrap header .header_main h1.logo a span.pf {
+h1.logo a span.pf {
     font-size: 12px;
     position: relative;
     top: -2px;
