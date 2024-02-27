@@ -398,7 +398,14 @@ section#portfolio .portfolio_main dl dd {
     position: relative;
 }
 
-.portfolio_main dl:nth-child(2) dd p.site {
+.portfolio_main dl:nth-child(2) dd p.site_btn {
     position: absolute;
     right: 0;
+}
+
+/* pf - 03 - img */
+.portfolio_main dl:nth-child(3) dt {
+    background: url("../images/pf3.png")no-repeat;
+    background-position: 120px 80px;
+    background-size: 85%;
 }
