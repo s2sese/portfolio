@@ -114,4 +114,5 @@ h1.logo a span.pf::before {
     left: -8px;
     width: 1px;
     height: 9px;
+    background-color: #444;
 }
