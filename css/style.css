@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: normal 15px 'RalewayL';
+    font: normal 15px 'RalewayL';
     color: #444;
 }
 
@@ -125,6 +125,7 @@ h1.logo a span.pf::before {
 }
 
 /* menu */
+
 ul.nav {
     position: absolute;
     right: 0;
@@ -141,6 +142,7 @@ ul.nav li {
     cursor: pointer;
 }
 
+
 /* profile */
 section#profile {
     width: 100%;
@@ -148,8 +150,8 @@ section#profile {
 }
 
 section#profile .profile_main {
-    width: 1400px;
-    margin: 0 auto;
+    width: 1250px;
+    margin: 40px auto;
     padding: 70px 0;
     overflow: hidden;
     display: flex;
@@ -170,6 +172,7 @@ section#profile .profile_main .p_left .img {
 /* 내소개 */
 section#profile .profile_main .p_right {
     width: 750px;
+    margin-top: 20px;
 }
 
 section#profile .profile_main .p_right dl {
@@ -191,4 +194,21 @@ section#profile .profile_main .p_right dl dt span {
     background: linear-gradient(to left, #8b72e8, #83b9f3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+section#profile .profile_main .p_right dl dd {
+    margin-top: 50px;
+    font-size: 17px;
+    letter-spacing: -1.7px;
+    line-height: 1.7;
+}
+
+/* skills */
+/* 모든 section의 영문, 한글 타이틀 */
+section h2 {
+    font-size: 17px;
+    width: 90px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
 }
