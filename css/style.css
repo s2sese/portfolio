@@ -336,6 +336,7 @@ section#portfolio .portfolio_main dl dt {
 section#portfolio .portfolio_main dl dd {
     /* position: absolute; */
     width: 450px;
+    margin: 150px 0 0 150px;
 }
 
 .portfolio_main dl dd h4 {
@@ -346,7 +347,7 @@ section#portfolio .portfolio_main dl dd {
 .portfolio_main dl dd h5 {
     font-size: 50px;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .portfolio_main dl dd p {
