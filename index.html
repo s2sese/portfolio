@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- 제이쿼리의 animate의 제약사항을 해결해주는 TweenMax -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 제이쿼리의 animate의 제약사항을 해결해주는 TweenMax - 애니메이션 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
@@ -15,8 +16,28 @@
     </script>
      <script src="./js/jquery-1.11.3.min.js"></script>
      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     <script src="./js/main.js"></script>
 </head>
 <body>
-    
+    <!-- #wrap>header>.header_main>h1.logo>a>span+span -->
+    <div id="wrap">
+        <header>
+            <div class="header_main">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="logoImg">SEYOUNG</span>
+                        <span class="pf"></span>
+                    </a>
+                </h1>
+                <!-- menu -->
+                <!-- ul.nav>li*3 -->
+                <ul class="nav">
+                    <li>[ &nbsp;&nbsp;  ABOUT  &nbsp;&nbsp; ]</li>
+                    <li>[ &nbsp;&nbsp;  PORTFOLIO  &nbsp;&nbsp; ]</li>
+                    <li>[ &nbsp;&nbsp;  OTHER DESIGN  &nbsp;&nbsp; ]</li>
+                </ul>
+            </div>
+        </header>
+    </div>
 </body>
 </html>
