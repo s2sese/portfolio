@@ -224,3 +224,18 @@ section h3 {
     letter-spacing: 2px;
     font-weight: 100;
 }
+
+/* skill */
+section#skill {
+    width: 100%;
+    padding: 0 0 150px 0;
+}
+
+section#skill .skill_main {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+section#skill .skill_main>div {
+    display: flex;
+}
