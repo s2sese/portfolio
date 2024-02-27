@@ -433,3 +433,10 @@ section#portfolio .portfolio_main dl dd {
     position: absolute;
     right: 0;
 }
+
+/* pf - 05 - img */
+.portfolio_main dl:nth-child(5) dt {
+    background: url("../images/pf5.png")no-repeat;
+    background-position: 200px 80px;
+    background-size: 85%;
+}
