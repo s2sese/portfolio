@@ -26,9 +26,24 @@ $(function () {
         } else {// 4501px 이상일 때 색 나옴
             $(".header_main>ul>li:nth-child(3)").addClass("active");
         }
+        // 최상단 왔을 때 메뉴 색 해제
+        if (height === 0) {
+            $(".header_main>ul>li").removeClass("active");
+        }
     });
 
     // 각 메뉴 클릭 시 해당 위치로 이동
+    // .position(); - 선택한 요소의 위치 가져옴
+    $(".header_main>ul>li:nth-child(1)").on("click",()=>{
+        let about = $("#skill").position();
+        $("html,body").animate({
+            scrollTop:about.top - 80
+        },400);
+        // 전체메뉴 active 삭제
+        // 클릭이 일어난 this에만 active 추가
+        $(".header_main>ul>li").removeClass("active");
+        $(this).addClass("active");
+    });
     // 썸네일 이미지 클릭 시 배경과 이미지, 화살표 나타남
     // 배경 클릭시 팝업 사라짐
     // 좌우화살표 클릭시 슬라이드 이동됨
