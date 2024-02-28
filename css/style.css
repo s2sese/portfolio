@@ -319,6 +319,7 @@ section#portfolio .portfolio_main {
     width: 1300px;
     margin: 0 auto;
     padding: 30px 0;
+    height: auto;
 }
 
 /* 폿폴이미지 */
