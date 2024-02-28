@@ -592,3 +592,89 @@ img.btn_top {
     height: 50px;
     cursor: pointer;
 }
+
+/* 슬라이드 팝업 */
+#wrap #popup {
+    width: 100%;
+}
+
+#wrap #popup .popup_main {
+    width: 100%;
+}
+
+#wrap #popup .popup_main .bg {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* top: 0; left: 0; right: 0 bottom: 0; - 상하좌우 붙어있는 형태 */
+    background-color: rgba(0,0,0,0.7);
+    /* display: none; */
+}
+
+#wrap #popup .popup_main .bg p.close {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 수평으로 중앙정렬 */
+    color: #ebe9e9;
+    font-size: 13px;
+    font-weight: 100;
+    z-index: 6;
+}
+
+#wrap #popup .popup_main .popup {
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 8;
+    overflow: hidden;
+    /* 마스크 처리 */
+    /* display: none; */
+}
+
+/* 이전, 다음 버튼 */
+.popup button {
+    outline: 0;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    /* height 값과 line-height 값 같으면 수직중앙정렬 됨 */
+    font-size: 60px;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup button.prev {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 7;
+}
+
+.popup button.next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: 7;
+}
+
+.popup ul.popList {
+    display: flex;
+    width: 2400px;
+    height: 600px;
+}
+
+.popup ul.popList img {
+    width: 800px;
+    height: 600px;
+}
