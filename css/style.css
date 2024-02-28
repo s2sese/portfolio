@@ -617,7 +617,7 @@ img.btn_top {
     bottom: 0;
     /* top: 0; left: 0; right: 0 bottom: 0; - 상하좌우 붙어있는 형태 */
     background-color: rgba(0,0,0,0.7);
-    /* display: none; */
+    display: none;
 }
 
 #wrap #popup .popup_main .bg p.close {
@@ -642,7 +642,7 @@ img.btn_top {
     z-index: 8;
     overflow: hidden;
     /* 마스크 처리 */
-    /* display: none; */
+    display: none;
 }
 
 /* 이전, 다음 버튼 */
