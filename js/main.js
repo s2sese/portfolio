@@ -89,14 +89,82 @@ $(function () {
     $(".bg").on("click", () => fadeOutElements(".popup"));
 
 
-    /* ===============================================================
-        // ●좌우화살표 클릭시 슬라이드 이동됨 - 팝업슬라이드 (TweenMax) - 애니메이션 라이브러리
-        - html 요소의 속성을 변경하여 다양한 애니메이션 효과를 줌
-    =================================================================*/
+    /* =============================================================== 
+        // ● 좌우 화살표 클릭시 슬라이드 이동됨 - 팝업슬라이드 (TweenMax) - 애니메이션 라이브러리
+    ================================================================= */
+    // 슬라이드 갯수 저장 변수
+    let max = 0;
+
+    // 현재 표시된 이미지 갯수 저장 변수
+    let current = 0;
+
+    // 슬라이드 컨테이너 저장 변수 
+    let container;
+    // 실행 중 동적으로 할당될 수 있으므로 초기값 주지 않음
+
+    // current < 0 -> current 변수값이 0보다 작은지 확인
+    // prev 함수 정의 - animate 함수 호출하여 이전 방향으로 애니메이션 수행
+    let prev = () => (current = current < 0 ? max - 1 : current, animate("prev"));
+    // next
+    let next = () => (current = current > max - 1 ? 0 : current, animate("next"));
+    // 슬라이드 제어 함수 
+    // $direction 매개변수 - 방향 나타냄
+    function animate($direction) {
+        // 애니메이션 방향에 따라 이전 다음으로 변경
+        if ($direction === "next") {
+            // 다음 요소를 오른쪽으로 800픽셀 이동시키고, 마지막 요소를 첫번째 위치로 이동
+            // [1] - 두번째 요소 선택 후 margin-left 800픽셀로 설정
+            $(container.children()[1]).css('margin-left', '800px');
+            // .append() - 마지막 자식에 새요소나 내용추가
+            container.append(container.children()[0]);
+            // 컨테이너에 첫번째 자식을 요소의 맨 뒤에 추가
+            // 첫번째 요소에 애니메이션 줌
+            // 0.8초동안 애니메이션 진행 
+            // 애니메이션이 완료될때까지 왼쪽 여백을 0으로 이동
+            // ease:Expo.easeOut - 애니메이션 이징 - 부드럽게 시작하고 끝냄
+            // - 왼쪽으로 이동시키는 애니메이션 효과
+            TweenMax.to(container.children()[0], 0.8, {
+                marginLeft: 0,
+                ease: Expo.easeOut
+            });
+
+        } else if ($direction === "prev") {
+            // .prepend() - 첫번째 자식에 새로운 요소 추가
+            container.prepend(container.children()[max - 1]);
+            $(container.children()[0]).css('margin-left', '800px');
+            TweenMax.to(container.children()[0], 0.8, {
+                marginLeft: 0,
+                ease: Expo.easeOut
+            });
+        }
+    }
+
+    // 이전 버튼 클릭 이벤트 핸들러 
+    $('.popup>button.prev').on('click', function () {
+        // 재할당시 앞에 let을 붙이지 않음
+        container = $(this).parent('.popup').find('.popList');
+        max = container.children().length;
+        // pop 이미지 개수를 max 변수에 할당
+        container.addClass('margin-left', '-800px').prepend(container.children()[max - 1]);
+        prev(); // 함수호출
+    });
+    // 다음 버튼 클릭 이벤트 핸들러 
+
+    $('.popup>button.next').on('click', function () {
+        // 재할당시 앞에 let을 붙이지 않음
+        container = $(this).parent('.popup').find('.popList');
+        max = container.children().length;
+        // pop 이미지 개수를 max 변수에 할당
+        container.addClass('margin-left', '-800px').append(container.children()[0]);
+        next(); // 함수호출
+    });
+    // .parent() - 부모선택 
+
+
+    // TweenMax - HTML 요소의 속성을 변경하여 다양한 애니메이션 효과를 줌
+    // TweenMax를 사용하면 요소의 위치, 크기, 회전, 투명도 등 다양한 속성을 애니메이션화 해줌
 
 });
-
-
 
 
 
