@@ -65,17 +65,38 @@ $(function () {
         $(this).addClass("active");
     });
     // 썸네일 이미지 클릭 시 배경과 이미지, 화살표 나타남
-    $(".etc_1").on("click", () => $(".bg, .popup1, .popup1>button").fadeIn());
-    // 좌우화살표 클릭시 슬라이드 이동됨
+    // (popupSelector) 매개변수인데, 함수 호출 시 해당 요소들 페이드 인, 아웃 된다.
+    // 함수 호출 시 전달되는 값 (페이드 인 아웃)을 받아들이고자 매개변수로 넣어줌.
+    const fadeInElements = (popupSelector) => $(`.bg,${popupSelector},${popupSelector}>button`).fadeIn();
+    const fadeOutElements = (popupSelector) => $(`.bg,${popupSelector},${popupSelector}>button`).fadeOut(() => history.go(0));
+    // i가 1~5 순회되는 구조를 만듦
+    for (let i = 1; i <= 5; i++) {
+        $(`.popup${i}`).mouseenter(() => $(`.popup${i}>button`).fadeIn());
+        $(`.popup${i}`).mouseleave(() => $(`.popup${i}>button`).fadeOut());
+    }
+    // 팝업 클릭 시 해당 팝업 사라짐
+    for (let i = 1; i <= 5; i++) {
+        $(`.popup${i}>.popList>.popImg`).on("click", () => fadeOutElements(`.popup${i}`));
+    }
+    // 배경 클릭 시 사라짐
+    $(".bg").on("click",()=>fadeOutElements(".popup"));
+
+    // 좌우 화살표 클릭 시 슬라이드 이동 됨
     // 이미지에 마우스가 들어왔을 때 버튼 나타남
-    $(".popup1").mouseenter(() => $(".popup1>button").fadeIn());
-    // 이미지에서 마우스가 벗어날 때 버튼 사라짐
-    $(".popup1").mouseleave(() => $(".popup1>button").fadeOut());
 
-    // popup1 이미지 클릭 시 팝업창 사라짐
-    // history.go(0) 메서드 - 새로고침(현재 페이지 다시 로드)
-    $(".popup1>.popList>.popImg").on("click", () => $(".bg, .popup1, .popup>button").fadeOut(() => history.go(0)));
 
-    // 배경 클릭시 팝업 사라짐
-    $(".bg").on("click", () => $(".bg, .popup1, .popup>button").fadeOut(() => history.go(0)));
+
+    // $(".etc_1").on("click", () => $(".bg, .popup1, .popup1>button").fadeIn());
+    // // 좌우화살표 클릭시 슬라이드 이동됨
+    // // 이미지에 마우스가 들어왔을 때 버튼 나타남
+    // $(".popup1").mouseenter(() => $(".popup1>button").fadeIn());
+    // // 이미지에서 마우스가 벗어날 때 버튼 사라짐
+    // $(".popup1").mouseleave(() => $(".popup1>button").fadeOut());
+
+    // // popup1 이미지 클릭 시 팝업창 사라짐
+    // // history.go(0) 메서드 - 새로고침(현재 페이지 다시 로드)
+    // $(".popup1>.popList>.popImg").on("click", () => $(".bg, .popup1, .popup>button").fadeOut(() => history.go(0)));
+
+    // // 배경 클릭시 팝업 사라짐
+    // $(".bg").on("click", () => $(".bg, .popup1, .popup>button").fadeOut(() => history.go(0)));
 });
