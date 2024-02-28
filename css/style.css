@@ -141,6 +141,11 @@ ul.nav li {
     cursor: pointer;
 }
 
+ul.nav li.active{
+    color: #6b9bfc;
+    border-bottom: 8px solid #6b9bfc;
+}
+
 /* profile */
 section#profile {
     width: 100%;
