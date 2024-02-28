@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- 제이쿼리의 animate의 제약사항을 해결해주는 TweenMax - 애니메이션 라이브러리 -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -57,14 +58,15 @@
                     <dl>
                         <dt>PRODUCT DESIGN <br>
                             <span>
-                                &amp; WEB DEVELOP
+                                &amp; WEB DEVELOPER
                             </span>
                         </dt>
-                        <dd>안녕하세요? 
+                        <dd>
+                            안녕하세요?
                             Product Designer 손세영입니다. <br>
                             사용자로 하여금 편의성과 만족도를 높여주는
-                            웹페이지를 제작하는 것이 저의 목표입니다. <br>
-                            부족한 부분은 배워나가며, 
+                            웹페이지를 제작하는 것이 저의 목표입니다.<br>
+                            부족한 부분은 배워나가며,
                             <span>소통을 중시하는 마음가짐</span>으로
                             노력하겠습니다. <br>
                             트랜드에 맞춰 쉬지 않고 노력하는 프로덕트 디자이너가 되겠습니다.
@@ -74,30 +76,29 @@
             </div>
         </section>
         <!-- skills -->
-            <!-- section#skill>.skill_main>h2+h3 -->
-            <section id="skill">
-                <div class="skill_main">
-                    <h2>알아보기</h2>
-                    <h3>ABOUT</h3>
-                    <!-- about -->
-                    <!-- .box.about>i.xi-user-plus.xi-2x -->
-                    <div>
+        <!-- section#skill>.skill_main>h2+h3 -->
+        <section id="skill">
+            <div class="skill_main">
+                <h2>알아보기</h2>
+                <h3>ABOUT</h3>
+                <!-- about -->
+                <!-- .box.about>i.xi-user-plus.xi-2x -->
+                <div>
                     <div class="box about">
                         <i class="xi-user-plus xi-2x"></i>
-                    <!-- dl>dt+dd -->
+                        <!-- dl>dt+dd -->
                         <dl>
                             <dt>ABOUT</dt>
                             <dd>손세영</dd>
                             <dd>1998-07-06</dd>
                             <dd>수원시 장안구</dd>
-                            <dd>NCS웹디자인/웹퍼블리셔반</dd>
+                            <dd>NCS웹디자인/퍼블리셔</dd>
                         </dl>
                     </div>
                     <!-- 연락처 -->
                     <!-- .box.contacts>i.xi-comment.xi-2x -->
                     <div class="box contacts">
                         <i class="xi-comment xi-2x"></i>
-                        <!-- dl>dt+dd -->
                         <dl>
                             <dt>CONTACTS</dt>
                             <dd>
@@ -106,32 +107,33 @@
                                 <span>010-1234-5678</span>
                             </dd>
                             <dd>
-                                <!-- i.xi-call.xi-2x -->
                                 <i class="xi-mail xi-2x"></i>
-                                <span>s2julia@naver.com</span>
+                                <span>e_iiias@naver.com</span>
                             </dd>
                         </dl>
                     </div>
                     <!-- 자격증 -->
+
                     <!-- .box.licenses>i.xi-book.xi-2x+dl>dt+dd*3 -->
                     <div class="box licenses">
                         <i class="xi-book xi-2x"></i>
                         <dl>
                             <dt>LICENSES</dt>
-                            <dd>웹디자인기능사(필기)</dd>
-                            <dd>GTQ 포토샵 1급</dd>
+                            <dd>웹디자인기능사</dd>
+                            <dd>GTQ포토샵1급</dd>
                         </dl>
                     </div>
                     <!-- TOOLS -->
                     <!-- .box.tools>i.xi-desktop.xi-2x -->
-                    <div class="box tools"><i class="xi-desktop xi-2x"></i>
+                    <div class="box tools"><i class="xi-desktop xi-2x">
+                        </i>
                         <dl>
                             <dt>TOOLS</dt>
                             <dd>Figma</dd>
                             <dd>Adobe XD</dd>
-                            <dd>Zeplin</dd>                       
+                            <dd>Zeplin</dd>
                             <dd>Adobe Photoshop</dd>
-                            <dd>Adobe Illustrator</dd>                       
+                            <dd>Adobe Illustrator</dd>
                             <dd>Adobe Animate</dd>
                             <dd>Adobe Indesign</dd>
                             <dd>Visual Studio Code</dd>
@@ -145,142 +147,202 @@
                         <i class="xi-code xi-2x"></i>
                         <dl>
                             <dt>SKILLS</dt>
-                            <dd>Git</dd>   
+                            <dd>Git</dd>
                             <dd>HTML5</dd>
                             <dd>CSS3</dd>
                             <dd>SASS</dd>
                             <dd>JavaScript</dd>
                             <dd>jQuery</dd>
-                            <dd>React</dd>                                           
+                            <dd>React</dd>
                             <dd>Presentation</dd>
                         </dl>
                     </div>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
+
         <!-- portfolio -->
-        <!-- section#portfolio>h2+h3+.portfolio_main -->
         <section id="portfolio">
-                <h2>포트폴리오</h2>
-                <h3>PORTFOLIO</h3>
-                <div class="portfolio_main">
-                    <!-- pf 1 -->
-                    <dl class="wow animate__animated animate__fadeInLeft">
-                        <dt></dt>
-                        <dd>
-                            <h4>01.한화케미칼</h4>
-                            <h5>HANHWA <br> 
-                            CEHMICAL</h5>
-                            <p>
-                                WEB CODING <br>
-                                제작 : 메인리뉴얼 <br><br><br>
-                                한화케미칼 사이트를 <br>
-                                그리드 시스템에 맞추어 코딩하였습니다.
-                            </p>
+            <h2>포트폴리오</h2>
+            <h3>PORTFOLIO</h3>
+            <div class="portfolio_main">
+                <!-- pf-1 -->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>01.한화카미칼</h4>
+                        <h5>HANHWA <br>
+                            CEHMICAL
+                        </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            한화케미칼 사이트를 <br>
+                            그리드 시스템에 맞추어 코딩하였습니다.
                             <!-- p.site_btn>a -->
-                            <p class="site_btn"><a href="https://s2sese.github.io/hanwha/">
-                                WEBSITE
-                            </a>
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/hanwha" target="_blank">
+                                    WEBSITE
+                                </a>
                             </p>
-                        </dd>
-                    </dl>
-                    <!-- pf 2 -->
-                    <dl class="wow animate__animated animate__fadeInRight">
-                        <!-- 포폴이미지 -->
-                        <dt></dt>
-                        <!-- 포폴내용 -->
-                        <dd>
-                            <h4>02.h.Point</h4>
-                            <h5>h.Point <br> 
-                            CEHMICAL</h5>
-                            <p>
-                                WEB CODING <br>
-                                제작 : 메인리뉴얼 <br><br><br>
-                                h.Point 사이트를 <br>
-                                그리드 시스템에 맞추어 코딩하였습니다.
-                            </p>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- pf-2 -->
+                <dl class="wow animate__animated animate__fadeInRight">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>02.h.Point</h4>
+                        <h5>h.Point </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            h.Point 사이트를 <br>
+                            그리드 시스템에 맞추어 코딩하였습니다.
                             <!-- p.site_btn>a -->
-                            <p class="site_btn"><a href="https://s2sese.github.io/sohnseyoung231219/">
-                                WEBSITE
-                            </a>
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/hPoint2023/" target="_blank">
+                                    WEBSITE
+                                </a>
                             </p>
-                        </dd>
-                    </dl>
-                    <!-- pf 3 -->
-                    <dl class="wow animate__animated animate__fadeInLeft">
-                        <dt></dt>
-                        <dd>
-                            <h4>03.삼양식품</h4>
-                            <h5>samyang</h5>
-                            <p>
-                                WEB CODING <br>
-                                제작 : 메인리뉴얼 <br><br><br>
-                                삼양식품 사이트를 <br>
-                                그리드 시스템에 맞추어 코딩하였습니다.
-                            </p>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- pf-3 -->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>03.삼양식품</h4>
+                        <h5> SAMYANG </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            삼양식품 사이트를 <br>
+                            그리드 시스템에 맞추어 코딩하였습니다.
                             <!-- p.site_btn>a -->
-                            <p class="site_btn"><a href="https://s2sese.github.io/samyang/">
-                                WEBSITE
-                            </a>
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/samyang240208/" target="_blank">
+                                    WEBSITE
+                                </a>
                             </p>
-                        </dd>
-                    </dl>
-                    <!-- pf 4 -->
-                    <dl class="wow animate__animated animate__fadeInRight">
-                        <!-- 포폴이미지 -->
-                        <dt></dt>
-                        <!-- 포폴내용 -->
-                        <dd>
-                            <h4>04.ITSIX</h4>
-                            <h5>ITSIX</h5>
-                            <p>
-                                WEB CODING <br>
-                                제작 : 메인리뉴얼 <br><br><br>
-                                ITSIX 사이트를 <br>
-                                그리드 시스템에 맞추어 반응형으로 코딩하였습니다.
-                            </p>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- pf-4 -->
+                <dl class="wow animate__animated animate__fadeInRight">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>04.ITSIX</h4>
+                        <h5>ITSIX </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            ITSIX 사이트를 <br>
+                            그리드 시스템에 맞추어 반응형으로 코딩하였습니다.
                             <!-- p.site_btn>a -->
-                            <p class="site_btn"><a href="https://s2sese.github.io/sohnseyoung231214/">
-                                WEBSITE
-                            </a>
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/itSix/" target="_blank">
+                                    WEBSITE
+                                </a>
                             </p>
-                        </dd>
-                    </dl>
-                    <!-- pf 5 -->
-                    <dl class="wow animate__animated animate__fadeInLeft">
-                        <dt></dt>
-                        <dd>
-                            <h4>05.SK Picglobal</h4>
-                            <h5>SK Picglobal</h5>
-                            <p>
-                                WEB CODING <br>
-                                제작 : 메인리뉴얼 <br><br><br>
-                                SK Picglobal 사이트를 <br>
-                                그리드 시스템에 맞추어 코딩하였습니다.
-                            </p>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- pf-5 -->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>05.SK Picglobal</h4>
+                        <h5>SK <br>
+                            Picglobal
+                        </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            SK Picglobal 사이트를 <br>
+                            그리드 시스템에 맞추어 코딩하였습니다.
                             <!-- p.site_btn>a -->
-                            <p class="site_btn"><a href="https://s2sese.github.io/skpic/">
-                                WEBSITE
-                            </a>
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/skpic240113/" target="_blank">
+                                    WEBSITE
+                                </a>
                             </p>
-                        </dd>
-                    </dl>
-                </div>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- pf-6 -->
+                <dl class="wow animate__animated animate__fadeInRight">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>06.3D SITE</h4>
+                        <h5>3D SITE </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            3D SITE 사이트를 <br>
+                            그리드 시스템에 맞추어 반응형으로 코딩하였습니다.
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/3D-Site/" target="_blank">
+                                    WEBSITE
+                                </a>
+                            </p>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- pf-7 -->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 -->
+                    <dt></dt>
+                    <!-- 폿폴내용 -->
+                    <dd>
+                        <h4>07.Six Column</h4>
+                        <h5>Six <br>
+                            Column Site
+                        </h5>
+                        <div>
+                            WEB CODING <br>
+                            제작 : 메인리뉴얼 <br><br><br>
+                            Six Column 사이트를 <br>
+                            그리드 시스템에 맞추어 반응형으로 코딩하였습니다.
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://anseonjang.github.io/responsive6c/" target="_blank">
+                                    WEBSITE
+                                </a>
+                            </p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
         </section>
         <!-- etc design -->
-        <!-- section#etc>h2+h3+.etc_main -->
+
         <section id="etc">
             <h2>기타디자인</h2>
             <h3>OTHER DESIGN</h3>
             <div class="etc_main">
                 <!-- dl.etc_1>dt+dd -->
+
+                <!-- 1 -->
                 <dl class="etc_1">
                     <!-- 이미지 -->
                     <dt>
                         <!-- p>strong+i -->
                         <p><strong>자세히보기</strong>
-                            <i></i>
-                        </p>
+                            <i></i></p>
                     </dt>
                     <!-- 텍스트 -->
                     <dd>
@@ -289,13 +351,13 @@
                         </span> 이모티콘
                     </dd>
                 </dl>
+                <!-- 2-->
                 <dl class="etc_2">
                     <!-- 이미지 -->
                     <dt>
                         <!-- p>strong+i -->
                         <p><strong>자세히보기</strong>
-                            <i></i>
-                        </p>
+                            <i></i></p>
                     </dt>
                     <!-- 텍스트 -->
                     <dd>
@@ -303,13 +365,13 @@
                         아즈키 앱 디자인
                     </dd>
                 </dl>
+                <!-- 3 -->
                 <dl class="etc_3">
                     <!-- 이미지 -->
                     <dt>
                         <!-- p>strong+i -->
                         <p><strong>자세히보기</strong>
-                            <i></i>
-                        </p>
+                            <i></i></p>
                     </dt>
                     <!-- 텍스트 -->
                     <dd>
@@ -317,13 +379,13 @@
                         합성
                     </dd>
                 </dl>
+                <!-- 4 -->
                 <dl class="etc_4">
                     <!-- 이미지 -->
                     <dt>
                         <!-- p>strong+i -->
                         <p><strong>자세히보기</strong>
-                            <i></i>
-                        </p>
+                            <i></i></p>
                     </dt>
                     <!-- 텍스트 -->
                     <dd>
@@ -331,13 +393,13 @@
                         아이콘 디자인
                     </dd>
                 </dl>
+                <!-- 5 -->
                 <dl class="etc_5">
                     <!-- 이미지 -->
                     <dt>
                         <!-- p>strong+i -->
                         <p><strong>자세히보기</strong>
-                            <i></i>
-                        </p>
+                            <i></i></p>
                     </dt>
                     <!-- 텍스트 -->
                     <dd>
@@ -347,18 +409,18 @@
                 </dl>
             </div>
         </section>
+
         <!-- footer -->
         <footer>
-        <!-- .footer_main>img.btn_top -->
-        <div class="footer_main">
-            <img src="./images/btn_top.png" alt="화살표" class="btn_top">
-            <!-- .copyright>p -->
-            <div class="copyright">
-                <p>
-                    &copy; 2024 SEYOUNG. ALL rights reserved.
-                </p>
+            <!-- .footer_main>img.btn_top -->
+            <div class="footer_main">
+                <img src="./images/btn_top.png" alt="화살표" class="btn_top">
+                <div class="copyright">
+                    <p>
+                        &copy; 2024 ANSEON. All rights reserved.
+                    </p>
+                </div>
             </div>
-        </div>
         </footer>
         <!-- popup box slide -->
         <!-- #popup>.popup_main>.bg>p.close -->
@@ -369,10 +431,11 @@
                         팝업창을 닫으시려면 아무 곳이나 클릭하세요.
                     </p>
                 </div>
-                <!-- popup 1 -->
+                <!-- popup1 -->
                 <!-- .popup1.popup>button.prev -->
+                <!-- 1 -->
                 <div class="popup1 popup">
-                    <!-- 이전, 다음 화살표 -->
+                    <!-- 이전,다음 화살표 -->
                     <button class="prev"><i class="fa-light fa-angle-left"></i></button>
                     <button class="next"><i class="fa-light fa-angle-right"></i></button>
                     <!-- 팝업 슬라이드 이미지 -->
@@ -383,9 +446,10 @@
                         <li class="popImg"><img src="./images/popup/1-3.png" alt="1-3"></li>
                     </ul>
                 </div>
-                <!-- popup 2 -->
+
+                <!-- 2 -->
                 <div class="popup2 popup">
-                    <!-- 이전, 다음 화살표 -->
+                    <!-- 이전,다음 화살표 -->
                     <button class="prev"><i class="fa-light fa-angle-left"></i></button>
                     <button class="next"><i class="fa-light fa-angle-right"></i></button>
                     <!-- 팝업 슬라이드 이미지 -->
@@ -396,43 +460,43 @@
                         <li class="popImg"><img src="./images/popup/2-3.png" alt="2-3"></li>
                     </ul>
                 </div>
-                <!-- popup 3 -->
+                <!-- 3 -->
                 <div class="popup3 popup">
-                    <!-- 이전, 다음 화살표 -->
+                    <!-- 이전,다음 화살표 -->
                     <button class="prev"><i class="fa-light fa-angle-left"></i></button>
                     <button class="next"><i class="fa-light fa-angle-right"></i></button>
                     <!-- 팝업 슬라이드 이미지 -->
                     <!-- ul.popList>li.popImg*3>img -->
                     <ul class="popList">
-                        <li class="popImg"><img src="./images/popup/3-1.png" alt="3-1"></li>
-                        <li class="popImg"><img src="./images/popup/3-2.png" alt="3-2"></li>
-                        <li class="popImg"><img src="./images/popup/3-3.png" alt="3-3"></li>
+                        <li class="popImg"><img src="./images/popup/3-1.png" alt="2-1"></li>
+                        <li class="popImg"><img src="./images/popup/3-2.png" alt="2-2"></li>
+                        <li class="popImg"><img src="./images/popup/3-3.png" alt="2-3"></li>
                     </ul>
                 </div>
-                <!-- popup 4 -->
+                <!-- 4 -->
                 <div class="popup4 popup">
-                    <!-- 이전, 다음 화살표 -->
+                    <!-- 이전,다음 화살표 -->
                     <button class="prev"><i class="fa-light fa-angle-left"></i></button>
                     <button class="next"><i class="fa-light fa-angle-right"></i></button>
                     <!-- 팝업 슬라이드 이미지 -->
                     <!-- ul.popList>li.popImg*3>img -->
                     <ul class="popList">
-                        <li class="popImg"><img src="./images/popup/4-1.png" alt="4-1"></li>
-                        <li class="popImg"><img src="./images/popup/4-2.png" alt="4-2"></li>
-                        <li class="popImg"><img src="./images/popup/4-3.png" alt="4-3"></li>
+                        <li class="popImg"><img src="./images/popup/4-1.png" alt="2-1"></li>
+                        <li class="popImg"><img src="./images/popup/4-2.png" alt="2-2"></li>
+                        <li class="popImg"><img src="./images/popup/4-3.png" alt="2-3"></li>
                     </ul>
                 </div>
-                <!-- popup 5 -->
+                <!-- 5 -->
                 <div class="popup5 popup">
-                    <!-- 이전, 다음 화살표 -->
+                    <!-- 이전,다음 화살표 -->
                     <button class="prev"><i class="fa-light fa-angle-left"></i></button>
                     <button class="next"><i class="fa-light fa-angle-right"></i></button>
                     <!-- 팝업 슬라이드 이미지 -->
                     <!-- ul.popList>li.popImg*3>img -->
                     <ul class="popList">
-                        <li class="popImg"><img src="./images/popup/5-1.png" alt="5-1"></li>
-                        <li class="popImg"><img src="./images/popup/5-2.png" alt="5-2"></li>
-                        <li class="popImg"><img src="./images/popup/5-3.png" alt="5-3"></li>
+                        <li class="popImg"><img src="./images/popup/5-1.png" alt="2-1"></li>
+                        <li class="popImg"><img src="./images/popup/5-2.png" alt="2-2"></li>
+                        <li class="popImg"><img src="./images/popup/5-3.png" alt="2-3"></li>
                     </ul>
                 </div>
             </div>
